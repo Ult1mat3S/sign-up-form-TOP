@@ -4,15 +4,66 @@
     padding: 0;
 }
 
-div img {
-    float: left;
+h5 {
+    font-size: 15px;
+    padding-top: 100px;
+    width: 500px;
+}
+
+.container p,
+h5 {
+    margin-left: 500px;
+}
+
+
+.background-container {
     width: 35%;
     height: 15%;
+    float: left;
+}
+
+.odin-logo-container {
+    position: absolute;
+    margin-left: 0px;
+    width: 472px;
+    text-align: center;
+    z-index: 0;
+}
+
+#odin-logo {
+    margin-left: -50px;
+    width: 80px;
+    position: relative;
+    z-index: 2;
+}
+
+.odin-logo-container p {
+    font-size: xx-large;
+    font-family: Norse-Bold;
+    position: relative;
+    margin-top: -135px;
+    margin-left: 0px;
+    width: 472px;
+    background: black;
+    text-align: center;
+    height: 190px;
+    color: white;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+input {
     display: block;
 }
 
-div h1 {
-    float: right;
+label {
+    display: inline-block;
+}
 
 
+form,
+section {
+    padding-left: 500px;
+    padding-top: 10px;
+    margin-top: 20px;
 }
