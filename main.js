@@ -1,9 +1,16 @@
 function onChange() {
-    const user_password = document.querySelector('input[name=user_password]');
-    const user_password_confirm = document.querySelector('input[name=user_password_confirm]');
-    if (user_password_confirm.value === user_password.value) {
-        user_password_confirm.setCustomValidity('');
+    const password = document.querySelector('input[name=password]');
+    const password_confirm = document.querySelector('input[name=password_confirm]');
+    const validPassword = document.querySelector('#validPassword');
+
+    if (password_confirm.value === password.value) {
+        password_confirm.setCustomValidity('');
+        validPassword.textContent = ''
     } else {
-        user_password_confirm.setCustomValidity('Passwords do not match');
+        password_confirm.setCustomValidity('Passwords do not match');
+        password.setAttribute('style', 'outline: none; border: 0.1px solid red;');
+        password_confirm.setAttribute('style', 'outline: none; border: 0.1px solid red;');
+        validPassword.setAttribute('style', 'color: red; position: relative; margin-top: -22px;');
+        validPassword.textContent = '* Passwords do not match'
     }
 }
