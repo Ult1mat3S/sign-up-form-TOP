@@ -35,14 +35,14 @@
 
         <form action="https://httpbin.org/post" id="primary-form" method="post">
             <label for="first_name">FIRST NAME
-                <input type="text" id="first_name" name="first_name">
+                <input type="text" id="first_name" name="first_name" required>
             </label>
             <label for="last_name">LAST NAME
-                <input type="text" id="last_name" name="last_name">
+                <input type="text" id="last_name" name="last_name" required>
             </label>
             <br>
             <label for="email">EMAIL
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
             </label>
             <label for="phone_number">PHONE NUMBER
                 <input type="number" id="phone_number" name="phone_number" required>
@@ -54,7 +54,7 @@
             <label for="password_confirm">CONFIRM PASSWORD
                 <input type="password" id="password_confirm" name="password_confirm" required>
             </label>
-            <div id="validPassword"></div>
+            <p id="validPassword"></p>
             <br>
             <button onclick="onClick()" form="primary-form" type="button">Create Account</button>
         </form>
