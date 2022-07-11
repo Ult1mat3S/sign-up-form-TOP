@@ -73,7 +73,7 @@ input {
 
 label {
     display: inline-block;
-    font-size: 12px;
+    font-size: x-small;
     font-weight: 500;
 }
 
@@ -111,8 +111,6 @@ button {
 #email,
 #password {
     margin-right: 70px;
-
-
 }
 
 span p {
@@ -128,12 +126,13 @@ span a {
 
 input {
     padding-left: 5px;
-    border-color: rgb(0 0 0 / 20%);
+    border-color: rgb(0 0 0 / 4%);
     border-radius: 3px;
     margin-bottom: 20px;
 }
 
 input:focus {
     outline: none;
+    box-shadow: 1px 2px 2px 1px rgb(0 0 0 / 20%);
     border: 0.1px solid royalblue;
 }
