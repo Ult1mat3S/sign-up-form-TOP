@@ -1,4 +1,4 @@
-function onChange() {
+function onClick() {
     const password = document.querySelector('input[name=password]');
     const password_confirm = document.querySelector('input[name=password_confirm]');
     const validPassword = document.querySelector('#validPassword');
